@@ -1,5 +1,30 @@
-    <style>
+:root{
+    --main-color: rgb(20, 65, 216);
+--thin-border: 1px solid rgb(20, 65, 216);
+--transition-button: all 200ms ease-in-out;
+}
       body {
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Jura', sans-serif;
+        text-align: center;      
+margin: 40px auto;
+
       }
-    </style>
+
+  .buttons-container a{
+      padding: 10px 20px;
+      border-radius: 10px;
+  }
+  #about-me-button:hover,  #contact-me-button:hover{
+transition: var(--transition-button);
+  }
+  #contact-me-button{
+       background-color: var(--main-color);
+       color: white;
+       
+   }
+
+
+#about-me-button{
+       color: var(--main-color);
+       border: var(--thin-border);
+   }
