@@ -72,7 +72,8 @@ h3 {
   text-align: justify;
   margin-bottom: 20px;
 }
-.about-me-section {
+#about-me-section
+ {
   display: flex;
   justify-content: space-evenly;
   margin: 30px auto;
