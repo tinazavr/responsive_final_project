@@ -27,16 +27,15 @@ a {
   text-decoration: none;
       transition: all 400ms ease-in-out;
 }
-.buttons-container a {
+.buttons-container a, .visit-website-button {
   padding: 15px 25px;
-  border-radius: 10px;
 }
 
 .buttons-container {
   margin-top: 30px;
 }
 
-#contact-me-button:hover {
+#contact-me-button:hover, .visit-website-button:hover {
   transition: var(--transition-button);
   color: var(--main-color);
   background-color: white;
@@ -48,11 +47,11 @@ a {
   color: white;
 }
 #contact-me-button,
-#about-me-button {
+#about-me-button, .visit-website-button {
   box-shadow: var(--shadow-buttons);
 }
 
-#contact-me-button {
+#contact-me-button, .visit-website-button {
   background-color: var(--main-color);
   color: white;
   margin-right: var(--margin-between-buttons);
@@ -93,4 +92,17 @@ footer {
 }
 .bg-color{
    background-color: var(--background-color)
+}
+.bg-color-contrast{
+  background-color: var( --background-contrast-color);
+}
+.image-container{
+
+}
+.section-container{
+
+}
+
+section div p{
+  text-align: justify;
 }
