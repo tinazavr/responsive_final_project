@@ -5,7 +5,8 @@
   --transition-button: all 200ms ease-in-out;
   --margin-between-buttons: 20px;
   --shadow-buttons: 2px 2px 8px rgba(213, 120, 216, 0.3);
-  --background-color: rgba(213, 120, 216, 0.06);
+  --background-color: rgba(213, 120, 216, 0.05);
+  --background-contrast-color: white;
 }
 body {
   font-family: "Jura", sans-serif;
@@ -15,20 +16,16 @@ body {
   background-color: var(--background-color);
 }
 
-nav {
-  background-color: var(--background-color);
-}
+
 .navbar-brand,
 .nav-link {
   color: var(--main-color);
   font-size: large;
 }
-.nav-link:active {
-  color:red;
-  border: var(--border-dark);
-}
+
 a {
   text-decoration: none;
+      transition: all 400ms ease-in-out;
 }
 .buttons-container a {
   padding: 15px 25px;
@@ -79,7 +76,7 @@ h3 {
   margin-bottom: 15px;
 }
 .article-about-me {
-  background-color: var(--background-color);
+ 
   width: 450px;
   padding: 20px;
   text-align: justify;
@@ -93,5 +90,7 @@ h3 {
 footer {
   margin-top: 200px;
   max-width: 1400px;
-  background-color: var(--background-color);
+}
+.bg-color{
+   background-color: var(--background-color)
 }
