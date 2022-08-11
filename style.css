@@ -10,8 +10,22 @@
 body {
   font-family: "Jura", sans-serif;
   text-align: center;
-  margin: 40px auto;
-  max-width: 1000px;
+  margin: 5px auto;
+  max-width: 1400px;
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--background-color);
+}
+.navbar-brand,
+.nav-link {
+  color: var(--main-color);
+  font-size: large;
+}
+.nav-link:active {
+  color:red;
+  border: var(--border-dark);
 }
 a {
   text-decoration: none;
@@ -52,7 +66,7 @@ a {
   border: var(--border-dark);
   margin-left: var(--margin-between-buttons);
 }
-header p {
+header section p {
   font-size: xx-large;
 }
 .contact-links {
@@ -68,16 +82,16 @@ h3 {
   background-color: var(--background-color);
   width: 450px;
   padding: 20px;
-  border-radius: 10px;
   text-align: justify;
   margin-bottom: 20px;
 }
-#about-me-section
- {
+#about-me-section {
   display: flex;
   justify-content: space-evenly;
   margin: 30px auto;
 }
-footer{
-    margin-top: 200px;
+footer {
+  margin-top: 200px;
+  max-width: 1400px;
+  background-color: var(--background-color);
 }
