@@ -1,5 +1,5 @@
 :root {
-  --main-color: rgb(20, 65, 216);
+  --main-color: rgb(31, 73, 212);
   --border-dark: 1px solid rgb(20, 65, 216);
   --border-light: 1px solid white;
   --transition-button: all 200ms ease-in-out;
@@ -8,7 +8,17 @@
   --shadow-img: 5px 5px 10px rgba(213, 120, 216, 0.3);
   --rounded-more: 10px;
   --background-color: rgba(213, 120, 216, 0.05);
+    --nav-background-color: rgb(250, 241, 251);
+
   --background-contrast-color: white;
+}
+.nav-styles {
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+.margin-for-nav {
+  margin-top: 100px;
 }
 body {
   font-family: "Jura", sans-serif;
@@ -81,16 +91,10 @@ header section p {
 h3 {
   margin-bottom: 15px;
 }
-.article-about-me {
-  width: 450px;
-  padding: 20px;
-  text-align: justify;
-  margin-bottom: 20px;
-}
+
 #about-me-section {
-  display: flex;
-  justify-content: space-evenly;
   margin: 30px auto;
+  text-align: justify;
 }
 footer {
   margin-top: 200px;
@@ -99,12 +103,11 @@ footer {
 .bg-color {
   background-color: var(--background-color);
 }
+.nav-bg-color{
+background-color: var( --nav-background-color);
+}
 .bg-color-contrast {
   background-color: var(--background-contrast-color);
-}
-.image-container {
-}
-.section-container {
 }
 
 section div p {
