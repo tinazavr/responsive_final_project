@@ -1,14 +1,15 @@
 :root {
   --main-color: rgb(31, 73, 212);
   --border-dark: 1px solid rgb(20, 65, 216);
-  --border-light: 1px solid white;
+  --border-contrast: 1px solid white;
+
   --transition-button: all 200ms ease-in-out;
   --margin-between-buttons: 20px;
   --shadow-buttons: 3px 3px 8px rgba(213, 120, 216, 0.3);
   --shadow-img: 5px 5px 10px rgba(213, 120, 216, 0.3);
   --rounded-more: 10px;
   --background-color: rgba(213, 120, 216, 0.05);
-    --nav-background-color: rgb(250, 241, 251);
+  --nav-background-color: rgb(250, 241, 251);
 
   --background-contrast-color: white;
 }
@@ -103,8 +104,8 @@ footer {
 .bg-color {
   background-color: var(--background-color);
 }
-.nav-bg-color{
-background-color: var( --nav-background-color);
+.nav-bg-color {
+  background-color: var(--nav-background-color);
 }
 .bg-color-contrast {
   background-color: var(--background-contrast-color);
@@ -116,4 +117,8 @@ section div p {
 .styles-img {
   box-shadow: var(--shadow-img);
   border-radius: var(--rounded-more);
+  
+}
+.about-me-img-container{
+  max-width: 30%;
 }

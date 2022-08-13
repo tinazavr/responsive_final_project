@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
     <link href="../style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -50,8 +55,8 @@
         </nav>
       </header>
 
-      <main class='margin-for-nav '>
-        <h2 >About me</h2>
+      <main class="margin-for-nav">
+        <h2>About me</h2>
         <h3>Front-end developer from Lviv, Ukraine 🇺🇦</h3>
         <section id="about-me-section" class="w-75 p-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
@@ -65,14 +70,40 @@
           non dolorem quia, odit qui alias veniam excepturi rem dolor fugit
           dignissimos, sed voluptatum blanditiis harum.
         </section>
-        <div class="row">
-          <div class="col-sm-4 img-fluid"><img src="../img/borsch.png" width='300px' alt="" />
+        <section>
+          <div class="row d-flex justify-content-evenly">
+            <div
+              class="col-sm-4 about-me-img-container p-3 rounded bg-color-contrast"
+            >
+              <img
+                class="img-fluid styles-img"
+                src="../img/borsch.png"
+                width="400px"
+                alt=  "Image web-site about Ukrainian cuisine"
+              />
+            </div>
+            <div
+              class="col-sm-4 about-me-img-container p-3 rounded bg-color-contrast"
+            >
+              <img
+                class="img-fluid styles-img"
+                src="../img/weather.png"
+                width="400px"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-sm-4 about-me-img-container p-3 rounded bg-color-contrast"
+            >
+              <img
+                class="img-fluid styles-img"
+                src="../img/borsch.png"
+                width="400px"
+                alt="Image web-site about Ukrainian cuisine"
+              />
+            </div>
           </div>
-           <div class="col-sm-4 img-fluid"><img src="../img/weather.png" width='300px' alt="" />
-          </div>
-           <div class="col-sm-4 img-fluid"><img src="../img/borsch.png" width='300px'  alt="" />
-          </div>
-        </div>
+        </section>
       </main>
       <footer></footer>
     </div>
