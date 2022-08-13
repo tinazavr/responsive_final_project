@@ -13,6 +13,8 @@
 
   --background-contrast-color: white;
 }
+
+
 .nav-styles {
   position: fixed;
   top: 0;
@@ -104,7 +106,7 @@ footer {
 .bg-color {
   background-color: var(--background-color);
 }
-.nav-bg-color {
+.nav-styles {
   background-color: var(--nav-background-color);
 }
 .bg-color-contrast {
@@ -118,7 +120,4 @@ section div p {
   box-shadow: var(--shadow-img);
   border-radius: var(--rounded-more);
   
-}
-.about-me-img-container{
-  max-width: 30%;
 }
