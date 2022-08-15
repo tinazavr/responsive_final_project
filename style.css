@@ -111,6 +111,11 @@ footer {
 }
 .bg-color-contrast {
   background-color: var(--background-contrast-color);
+
+}
+.image-border{
+        border: 5px solid var(--background-color);
+
 }
 
 section div p {
