@@ -2,6 +2,7 @@
   --main-color: rgb(31, 73, 212);
   --border-dark: 1px solid rgb(20, 65, 216);
   --border-contrast: 1px solid white;
+  --secondary-color: rgba(213, 120, 216);
 
   --transition-button: all 200ms ease-in-out;
   --margin-between-buttons: 20px;
@@ -13,7 +14,6 @@
 
   --background-contrast-color: white;
 }
-
 
 .nav-styles {
   position: fixed;
@@ -69,7 +69,10 @@ a {
   box-shadow: var(--shadow-buttons);
   border-radius: var(--rounded-more);
 }
-
+nav .active {
+  text-decoration: overline;
+  text-decoration-color: var(--secondary-color);
+}
 #contact-me-button,
 .visit-website-button {
   background-color: var(--main-color);
@@ -111,18 +114,16 @@ footer {
 }
 .bg-color-contrast {
   background-color: var(--background-contrast-color);
-
 }
-.image-border{
-        border: 5px solid var(--background-color);
-
+.image-border {
+  border: 8px solid var(--background-color);
 }
 
 section div p {
   text-align: justify;
 }
-.styles-img {
+.styles-img,
+.text-shadow {
   box-shadow: var(--shadow-img);
   border-radius: var(--rounded-more);
-  
 }
