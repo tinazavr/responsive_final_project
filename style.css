@@ -29,7 +29,7 @@
 .margin-for-nav {
   margin-top: 100px;
 }
-a .nav-link{
+a .nav-link {
   padding: 12px;
 }
 body {
@@ -103,12 +103,10 @@ nav .active {
 header section p {
   font-size: xx-large;
 }
-.contact-links {
+a:hover {
   color: black;
 }
-.contact-links:hover {
-  color: var(--main-color);
-}
+
 h3 {
   margin-bottom: 15px;
 }
@@ -141,4 +139,12 @@ section div p {
 .text-shadow {
   box-shadow: var(--shadow-img);
   border-radius: var(--rounded-more);
+}
+
+.my-projects,
+.special-paragraph {
+  background-color: var(--background-contrast-color);
+}
+.special-paragraph {
+  font-size: large;
 }
