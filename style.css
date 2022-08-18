@@ -114,6 +114,7 @@ h3 {
 #about-me-section {
   margin: 30px auto;
   text-align: justify;
+  min-width: 400px;
 }
 footer {
   margin-top: 200px;
@@ -141,10 +142,19 @@ section div p {
   border-radius: var(--rounded-more);
 }
 
-.my-projects,
-.special-paragraph {
+.contrast-container {
   background-color: var(--background-contrast-color);
 }
 .special-paragraph {
   font-size: large;
+  text-align: center;
+  width: 50%;
+  min-width: 500px;
+  margin: auto;
+}
+.special-paragraph hr {
+  border-color: var(--main-color);
+  width: 50%;
+  margin: 8px auto;
+  opacity: 0.3;
 }
