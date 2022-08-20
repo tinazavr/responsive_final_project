@@ -69,9 +69,6 @@
   }
 }
 
-.nav-buttons-container {
-  justify-content: flex-end;
-}
 .nav-styles {
   position: fixed;
   top: 0;
@@ -210,4 +207,7 @@ section div p {
 
 .description-container p:last-of-type {
   margin-bottom: 35px;
+}
+.nav-links {
+  flex-grow: 0;
 }
