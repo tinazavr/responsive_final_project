@@ -23,13 +23,11 @@
   .img-container {
     display: none;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     font-weight: normal;
     font-size: medium;
-  }
-  a .ms-3:first-child {
-    margin-left: 0;
-  }
+  } */
+
   .description-container {
     margin: 0;
     padding: 0;
@@ -50,9 +48,9 @@
 }
 
 @media (min-width: 400px) {
-  .nav-styles {
+  /* .nav-styles {
     padding: 10px 70px;
-  }
+  } */
 
   #about-me-section {
     margin: 30px auto;
