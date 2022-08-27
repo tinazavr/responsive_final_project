@@ -15,11 +15,6 @@
 }
 
 @media (max-width: 399px) {
-  h1 {
-    background-color: red;
-    color: white;
-  }
-
   .img-container {
     display: none;
   }
@@ -90,6 +85,9 @@ body {
   margin: 5px auto;
   max-width: 1400px;
   background-color: var(--background-color);
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
 }
 .navbar-brand {
   font-weight: bold;
