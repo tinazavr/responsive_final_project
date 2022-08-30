@@ -15,6 +15,11 @@
 }
 
 @media (max-width: 399px) {
+
+  .container{
+      overflow-x: hidden;
+
+  }
   .img-container {
     display: none;
   }
