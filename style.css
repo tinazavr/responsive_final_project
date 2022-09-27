@@ -15,10 +15,8 @@
 }
 
 @media (max-width: 399px) {
-
-  .container{
-      overflow-x: hidden;
-
+  .container {
+    overflow-x: hidden;
   }
   .img-container {
     display: none;
@@ -91,7 +89,12 @@ body {
   max-width: 1400px;
   background-color: var(--background-color);
 }
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 .navbar-brand {
@@ -158,6 +161,11 @@ nav .active {
 header section p {
   font-size: xx-large;
 }
+.navbar-brand,
+.nav-link:hover {
+  transition: all 200ms ease-in-out;
+}
+
 a:hover {
   color: black;
 }
