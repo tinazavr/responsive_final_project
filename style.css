@@ -42,7 +42,7 @@ other
   .img-container {
     display: none;
   }
-  .only-for-mobile{
+  .only-for-mobile {
     display: block;
   }
   /* .navbar-brand {
@@ -100,7 +100,7 @@ other
   .img-container img {
     display: block;
   }
-  .only-for-mobile{
+  .only-for-mobile {
     display: none;
   }
 
@@ -190,7 +190,8 @@ a {
 }
 #about-me-button:hover,
 .footer-button:hover,
-.work-page-buttons:hover {
+.work-page-button:hover,
+.coming-soon-button:hover {
   transition: var(--transition-button);
   background-color: var(--main-color);
   color: white;
@@ -199,7 +200,8 @@ a {
 #about-me-button,
 .visit-website-button,
 .footer-button,
-.work-page-buttons {
+.work-page-button,
+.coming-soon-button {
   box-shadow: var(--shadow-buttons);
   border-radius: var(--rounded-more);
   padding: 15px 25px;
@@ -217,7 +219,8 @@ nav .active {
 
 #about-me-button,
 .footer-button,
-.work-page-buttons {
+.work-page-button,
+.coming-soon-button {
   color: var(--main-color);
   border: var(--border-dark);
 }
