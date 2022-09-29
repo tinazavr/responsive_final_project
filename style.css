@@ -67,6 +67,15 @@ other
   .footer-container {
     display: none;
   }
+.social-links{
+  margin-top: 0;
+  padding-top: 0;
+}
+ footer{
+   margin-top: 0;
+  padding-top:0; 
+  padding-bottom: 0;
+ }
 }
 
 @media (min-width: 400px) {
@@ -96,6 +105,15 @@ other
   .visit-website-button {
     padding: 15px 25px;
   }
+
+.social-links{
+  margin-top: 50px;
+  padding-top: 0;
+}
+  /* footer {
+  margin: 80px 10px 50px;
+  max-width: 1400px;
+} */
 }
 
 .nav-styles {
@@ -108,8 +126,9 @@ other
   padding-bottom: 12px;
   font-size: larger;
 }
-.margin-for-nav {
+.page-header {
   margin-top: 100px;
+  padding-top: 20px;;
 }
 a .nav-link {
   padding: 12px;
@@ -129,6 +148,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  line-height: inherit;
 }
 .navbar-brand {
   font-weight: bold;
@@ -212,10 +232,7 @@ h3 {
   margin-bottom: 15px;
 }
 
-footer {
-  margin-top: 100px;
-  max-width: 1400px;
-}
+
 .bg-color {
   background-color: var(--background-color);
 }
