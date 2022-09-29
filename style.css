@@ -42,6 +42,9 @@ other
   .img-container {
     display: none;
   }
+  .only-for-mobile{
+    display: block;
+  }
   /* .navbar-brand {
     font-weight: normal;
     font-size: medium;
@@ -67,18 +70,18 @@ other
   .footer-container {
     display: none;
   }
-  .buttons-container{
+  .buttons-container {
     display: none;
   }
-.social-links{
-  margin-top: 0;
-  padding-top: 0;
-}
- footer{
-   margin-top: 0;
-  padding-top:0; 
-  padding-bottom: 0;
- }
+  .social-links {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  footer {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 400px) {
@@ -97,6 +100,9 @@ other
   .img-container img {
     display: block;
   }
+  .only-for-mobile{
+    display: none;
+  }
 
   .special-paragraph {
     width: 60%;
@@ -109,14 +115,10 @@ other
     padding: 15px 25px;
   }
 
-.social-links{
-  margin-top: 50px;
-  padding-top: 0;
-}
-  /* footer {
-  margin: 80px 10px 50px;
-  max-width: 1400px;
-} */
+  .social-links {
+    margin-top: 50px;
+    padding-top: 0;
+  }
 }
 
 .nav-styles {
@@ -131,12 +133,13 @@ other
 }
 .page-header {
   margin-top: 100px;
-  padding-top: 20px;;
+  padding-top: 20px;
 }
 
 a .nav-link {
   padding: 12px;
 }
+
 body {
   font-family: "Jura", sans-serif;
   text-align: center;
@@ -186,7 +189,8 @@ a {
   border: var(--border-dark);
 }
 #about-me-button:hover,
-.footer-button:hover {
+.footer-button:hover,
+.work-page-buttons:hover {
   transition: var(--transition-button);
   background-color: var(--main-color);
   color: white;
@@ -194,7 +198,8 @@ a {
 #contact-me-button,
 #about-me-button,
 .visit-website-button,
-.footer-button {
+.footer-button,
+.work-page-buttons {
   box-shadow: var(--shadow-buttons);
   border-radius: var(--rounded-more);
   padding: 15px 25px;
@@ -211,9 +216,12 @@ nav .active {
 }
 
 #about-me-button,
-.footer-button {
+.footer-button,
+.work-page-buttons {
   color: var(--main-color);
   border: var(--border-dark);
+}
+#about-me-button {
   margin-left: var(--margin-between-buttons);
 }
 #contact-me-button {
@@ -235,7 +243,6 @@ a:hover {
 h3 {
   margin-bottom: 15px;
 }
-
 
 .bg-color {
   background-color: var(--background-color);
@@ -290,6 +297,7 @@ section div p {
 .contrast-container {
   color: var(--main-color);
 }
+
 .footer-button {
   margin: auto;
 }
