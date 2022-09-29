@@ -14,6 +14,27 @@
   --background-contrast-color: white;
 }
 
+/* 
+
+other
+:root {
+  --main-color: rgb(87, 0, 0);
+  --border-dark: 1px solid rgb(87, 0, 0);
+  --border-contrast: 1px solid white;
+  --secondary-color: rgba(0, 116, 0);
+
+  --transition-button: all 200ms ease-in-out;
+  --margin-between-buttons: 20px;
+  --shadow-buttons: 3px 3px 8px rgba(0, 116, 0, 0.3);
+  --shadow-img: 5px 5px 10px rgba(0, 116, 0, 0.3);
+  --rounded-more: 10px;
+  --background-color: rgba(225, 243, 229, 0.075);
+  --nav-background-color: rgb(225, 243, 229);
+  --background-contrast-color: rgb(253, 253, 253);
+   --background-color: linear-gradient(109.6deg, rgb(0, 116, 0) 50%, rgba(198, 214, 197, 0.267) 50%); 
+}
+*/
+
 @media (max-width: 399px) {
   .container {
     overflow-x: hidden;
@@ -36,12 +57,15 @@
   }
   .special-paragraph {
     margin: auto 0;
-    font-size: medium;
+    font-size: larger;
     padding: 20px 5px;
   }
 
   .visit-website-button {
     padding: 15px 40px;
+  }
+  .footer-container {
+    display: none;
   }
 }
 
@@ -49,17 +73,24 @@
   /* .nav-styles {
     padding: 10px 70px;
   } */
-
+  .special-paragraph:hover {
+    font-size: 105%;
+    color: var(--main-color);
+  }
   #about-me-section {
     margin: 30px auto;
 
     width: 75%;
   }
+  .img-container img {
+    display: block;
+  }
 
   .special-paragraph {
-    width: 50%;
+    width: 60%;
     min-width: 500px;
     margin: auto;
+    transition: ease-in-out 500ms all;
   }
 
   .visit-website-button {
@@ -73,7 +104,8 @@
   left: 0;
   width: 100%;
   margin: 0;
-
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: larger;
 }
 .margin-for-nav {
@@ -87,6 +119,7 @@ body {
   text-align: center;
   margin: 5px auto;
   max-width: 1400px;
+  color: var(--main-color);
   background-color: var(--background-color);
 }
 h1,
@@ -103,6 +136,7 @@ h6 {
 }
 .nav-link {
   font-size: large;
+  font-weight: bolder;
 }
 
 .navbar-brand,
@@ -113,14 +147,13 @@ h6 {
 a {
   text-decoration: none;
   transition: all 400ms ease-in-out;
+  color: var(--secondary-color);
 }
 
 .buttons-container {
   margin-top: 30px;
 }
-.buttons-container a {
-  padding: 15px 25px;
-}
+
 #contact-me-button:hover,
 .visit-website-button:hover {
   transition: var(--transition-button);
@@ -128,20 +161,24 @@ a {
   background-color: white;
   border: var(--border-dark);
 }
-#about-me-button:hover {
+#about-me-button:hover,
+.footer-button:hover {
   transition: var(--transition-button);
   background-color: var(--main-color);
   color: white;
 }
 #contact-me-button,
 #about-me-button,
-.visit-website-button {
+.visit-website-button,
+.footer-button {
   box-shadow: var(--shadow-buttons);
   border-radius: var(--rounded-more);
+  padding: 15px 25px;
 }
 nav .active {
   text-decoration: overline;
   text-decoration-color: var(--secondary-color);
+  color: var(--main-color);
 }
 #contact-me-button,
 .visit-website-button {
@@ -149,7 +186,8 @@ nav .active {
   color: white;
 }
 
-#about-me-button {
+#about-me-button,
+.footer-button {
   color: var(--main-color);
   border: var(--border-dark);
   margin-left: var(--margin-between-buttons);
@@ -167,7 +205,7 @@ header section p {
 }
 
 a:hover {
-  color: black;
+  color: var(--main-color);
 }
 
 h3 {
@@ -175,7 +213,7 @@ h3 {
 }
 
 footer {
-  margin-top: 200px;
+  margin-top: 100px;
   max-width: 1400px;
 }
 .bg-color {
@@ -195,9 +233,11 @@ section div p {
   text-align: justify;
 }
 .styles-img,
-.text-shadow {
+.container-shadow {
   box-shadow: var(--shadow-img);
   border-radius: var(--rounded-more);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contrast-container {
@@ -205,9 +245,11 @@ section div p {
 }
 .special-paragraph {
   text-align: center;
+  font-size: medium;
+  font-weight: bold;
 }
 .special-paragraph hr {
-  border-color: var(--main-color);
+  border-color: var(--secondary-color);
   width: 50%;
   margin: 8px auto;
   opacity: 0.3;
@@ -221,4 +263,30 @@ section div p {
 }
 .nav-links {
   flex-grow: 0;
+}
+.footer-container,
+.special-paragraph,
+.contrast-container {
+  color: var(--main-color);
+}
+.footer-button {
+  margin: auto;
+}
+.footer-mail {
+  margin-top: 500px;
+  font-size: large;
+}
+footer .social-links a {
+  margin: 20px 5px;
+  padding: 7px 14px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--main-color);
+  border: var(--border-dark);
+  background-color: var(--background-contrast-color);
+}
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  border: var(--border-contrast);
+  background-color: var(--background-color);
 }
