@@ -67,6 +67,9 @@ other
   .footer-container {
     display: none;
   }
+  .buttons-container{
+    display: none;
+  }
 .social-links{
   margin-top: 0;
   padding-top: 0;
@@ -130,6 +133,7 @@ other
   margin-top: 100px;
   padding-top: 20px;;
 }
+
 a .nav-link {
   padding: 12px;
 }
@@ -171,7 +175,7 @@ a {
 }
 
 .buttons-container {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #contact-me-button:hover,
